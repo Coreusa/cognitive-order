@@ -1,4 +1,5 @@
 ## Cognitive Services Order Intent Example (LUIS)
+![header image](https://i.imgur.com/H1chadf.jpg)
 An example for figuring out order intents and returning the parsed result. Uses the language understanding services from Azure at luis.ai.
 
 ### Installation
