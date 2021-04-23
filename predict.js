@@ -1,16 +1,17 @@
 var requestPromise = require('request-promise');
 var queryString = require('querystring');
+const config = require('./config.json');
 
 // Analyze a string utterance.
 getPrediction = async () => {
     // YOUR-APP-ID: The App ID GUID found on the www.luis.ai Application Settings page.
-    const LUIS_appId = "LUIS_APP_ID";
+    const LUIS_appId = config.appId;
 
     // YOUR-PREDICTION-KEY: Your LUIS authoring key, 32 character value.
-    const LUIS_predictionKey = "LUIS_PREDICTION_KEY";
+    const LUIS_predictionKey = config.predictionKey;
 
     // YOUR-PREDICTION-ENDPOINT: Replace this with your authoring key endpoint.
-    const LUIS_endpoint = "LUIS_ENDPOINT_URL";
+    const LUIS_endpoint = config.endpoint;
 
     // The utterance you want to use.
     const utterance = process.argv[2]
