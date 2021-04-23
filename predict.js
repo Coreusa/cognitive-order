@@ -4,13 +4,13 @@ var queryString = require('querystring');
 // Analyze a string utterance.
 getPrediction = async () => {
     // YOUR-APP-ID: The App ID GUID found on the www.luis.ai Application Settings page.
-    const LUIS_appId = "1ef1c20b-882b-49a5-ad82-6cea28912b0d";
+    const LUIS_appId = "LUIS_APP_ID";
 
     // YOUR-PREDICTION-KEY: Your LUIS authoring key, 32 character value.
-    const LUIS_predictionKey = "76418d7f42e441e186a7b0f391c2fc35";
+    const LUIS_predictionKey = "LUIS_PREDICTION_KEY";
 
     // YOUR-PREDICTION-ENDPOINT: Replace this with your authoring key endpoint.
-    const LUIS_endpoint = "https://westus.api.cognitive.microsoft.com/";
+    const LUIS_endpoint = "LUIS_ENDPOINT_URL";
 
     // The utterance you want to use.
     const utterance = process.argv[2]
